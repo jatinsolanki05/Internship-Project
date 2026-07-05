@@ -1,0 +1,168 @@
+/* 1. GENERAL RESET (Pure Page ke Liye) */
+* {
+    
+    box-sizing: border-box;
+    font-family:  Arial  /* Modern professional font */
+}
+
+body {
+    background: #eaeaea; 
+    
+}
+
+/* 2. MAGIC UTILITY CLASS (Baar-baar flex/center likhne se bachne ke liye) */
+.flex-center, body, .resume, .profile {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* 3. MAIN RESUME LAYOUT */
+.resume {
+    max-width: 900px;
+    
+    background: #e8e0e0;
+    align-items: stretch; /* Taaki left aur right side dono barabar lambe rahein */
+    
+    
+    
+}
+
+/* 4. LEFT SIDEBAR (Dark Premium Theme) */
+.left {
+    width: 35%;
+    background: #112233; /* Dark Navy Blue (Very Professional) */
+    color: #e9e4e4;
+    padding: 25px;
+}
+
+
+.profile img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.left h1 {
+    font-size: 22px;
+}
+
+
+.contact h2, .section h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #48bb78; /* Eye-catching Soft Green Accents */
+    
+    
+}
+
+.contact p, .section p, .section li {
+    font-size: 13.5px;
+    color: #bec5ce;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+
+/* 5. RIGHT SIDE (Clean White Theme) */
+.right {
+    width: 68%;
+    padding: 40px 45px;
+}
+
+.heading {
+    font-size: 38px;
+    font-weight: 700;
+    color: #112233;
+    line-height: 1.1;
+}
+
+.jobtitle {
+    font-size: 16px;
+    color: #718096;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+
+/* Right Sections (Experience, Projects, Education) */
+.box {
+    margin-bottom: 30px;
+}
+
+.box h2 {
+    font-size: 16px;
+    color: #112233;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #112233;
+    padding-bottom: 5px;
+    margin-bottom: 18px;
+}
+
+.experience {
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    font-size: 16px;
+    color: #112233;
+    font-weight: 600;
+}
+
+.experience h4 {
+    font-size: 13px;
+    color: #718096;
+    font-weight: 400;
+    margin: 3px 0 8px;
+}
+
+.box p, .box ul li {
+    font-size: 14px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.box ul, .section ul {
+    padding-left: 5px;
+}
+
+/* INTERESTS TAGS (Clean Pill Shape) */
+.interest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.interest span {
+    background: #edf2f7;
+    color: #2d3748;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 6. RESPONSIVE DESIGN (Sirf 1 loop mein mobile responsive) */
+@media (max-width: 768px) {
+    .resume {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+}
